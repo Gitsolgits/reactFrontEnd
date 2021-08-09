@@ -6,6 +6,110 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.menuitem {
+  border-radius: 50rem;
+  border: 1px solid #183b5f;
+  margin: 2px 5px;
+  width: 130px;
+  text-align: center;
+}
+.body {
+  margin: 70px;
+}
+.toright {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 20px;
+}
+.mr-2 {
+  border: 1px solid #183b5f;
+  outline: none;
+  border-radius: 50rem;
+  text-align: center;
+}
+.btn {
+  border: 1px solid #183b5f;
+  outline: none;
+  border-radius: 50rem;
+}
+
+.bodyitemdetail {
+  margin: 20px 30px;
+}
+.bodyitemdetail1 {
+  border: 1px solid #183b5f;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+  align-items: baseline;
+  border-radius: 50rem;
+  margin: 12px 65px;
+}
+
+.rowitem2 {
+  position: absolute;
+  top: 0;
+  right: 25px;
+}
+.bodyitemoverview {
+  margin: 20px 35px;
+}
+.bodyitemoverview1 {
+}
+.overviewcol {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.overviewcol1 {
+  display: block;
+  text-align: center;
+}
+.myjobopening {
+  margin: 20px 35px;
+}
+.myjobopeningitem {
+  display: flex;
+  flex-direction: row;
+  margin: auto 60px;
+}
+.bodyitemjobopening {
+  display: flex;
+  flex-direction: column;
+  color: #021f3b;
+}
+.myjobopeningitem2 {
+  display: flex;
+  flex-direction: row;
+  margin: 30px 60px;
+}
+.jobopeningcol2 {
+  /*border: 1px solid red;*/
+}
+.view {
+  border: 1px solid #183b5f;
+  border-radius: 50rem;
+  display: inline-block;
+  margin: auto 35px;
+  width: 70px;
+  text-align: center;
+}
+.mycandidate {
+  margin: 20px 35px;
+}
+.mycandidateitem1 {
+  margin: 20px 45px;
+}
+.mycandidateitem2 {
+  margin: 20px 45px;
 }
