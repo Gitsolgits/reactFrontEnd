@@ -1,0 +1,13 @@
+.opening {
+  margin: 10px;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  color: #021f3b;
+}
+.location {
+  display: flex;
+  flex-direction: column;
+  color: #021f3b;
+}

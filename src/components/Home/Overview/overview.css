@@ -1,0 +1,18 @@
+.overview {
+  margin: 20px;
+}
+.item-count {
+  font-weight: 400;
+  font-family: sans-serif;
+  color: #183b5f;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.item-type {
+  font-weight: 400;
+  font-family: sans-serif;
+  color: #183b5f;
+  display: block;
+  text-align: center;
+}

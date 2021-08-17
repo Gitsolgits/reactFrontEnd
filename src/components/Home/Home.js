@@ -2,12 +2,12 @@ import React from "react";
 import Header from "../Header";
 import Footer from "../Footer/index";
 
-import Opening from "./Opening.js";
+import Opening from "./MyJobOpenings/Opening.js";
 import SearchSec from "./Search.js";
 import MyActivities from "./MyActivities";
 
-import Overview from "./Overview";
-import MyCandidate from "./MyCandidate";
+import Overview from "./Overview/Overview";
+import MyCandidates from "./MyCandidates";
 import { Container } from "react-bootstrap";
 
 function Home() {
@@ -17,14 +17,10 @@ function Home() {
       <Container>
         <SearchSec></SearchSec>
         <MyActivities></MyActivities>
-        <Overview></Overview>
-        <div className="bodyitem2">
-          <div className="myjobopening">My Job Openings</div>
-          <Opening openings={[{ title: "", description: "" }]}></Opening>
-        </div>
-        <MyCandidate></MyCandidate>
+        <Overview />
+        <Opening openings={[{ title: "", description: "" }]}></Opening>
+        <MyCandidates />
       </Container>
-      <Footer></Footer>
     </>
   );
 }

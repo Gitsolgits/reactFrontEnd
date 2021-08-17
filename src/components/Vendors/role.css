@@ -1,0 +1,25 @@
+.role {
+  padding: 5px;
+}
+#select {
+  margin-right: 10px;
+}
+.right {
+  float: right;
+}
+
+.row-title {
+  font-weight: 800;
+  font-family: sans-serif;
+  color: #183b5f;
+}
+
+.job-skill {
+  margin-left: 15px;
+}
+
+.icon {
+  margin: 5px;
+  font-size: 20px;
+  color: #183b5f;
+}

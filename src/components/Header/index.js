@@ -10,10 +10,14 @@ import {
   MDBNavbarLink,
   MDBCollapse,
 } from "mdb-react-ui-kit";
+import { useLocation } from "react-router";
+
 import "./Header.css";
 
 function Header() {
   const [showBasic, setShowBasic] = useState(false);
+  const activePath = location.path;
+  console.log(activePath, "activePath");
   return (
     <MDBNavbar expand="lg" light bgColor="light">
       <MDBContainer>
@@ -31,21 +35,36 @@ function Header() {
         <MDBCollapse navbar show={showBasic}>
           <MDBNavbarNav className="mr-auto mb-2 mb-lg-0">
             <MDBNavbarItem>
-              <MDBNavbarLink active aria-current="page" href="/">
+              <MDBNavbarLink
+                active={activePath === "/"}
+                aria-current="page"
+                href="/"
+              >
                 Home
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink href="/openings">Job Openings</MDBNavbarLink>
+              <MDBNavbarLink
+                active={activePath === "/openings"}
+                href="/openings"
+              >
+                Job Openings
+              </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink href="/clients">Clients</MDBNavbarLink>
+              <MDBNavbarLink active={activePath === "/clients"} href="/clients">
+                Clients
+              </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink href="/vendors">Vendors</MDBNavbarLink>
+              <MDBNavbarLink active={activePath === "/vendors"} href="/vendors">
+                Vendors
+              </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink href="/reports">Reports</MDBNavbarLink>
+              <MDBNavbarLink active={activePath === "/reports"} href="/reports">
+                Reports
+              </MDBNavbarLink>
             </MDBNavbarItem>
           </MDBNavbarNav>
           <MDBNavbarNav className="text-center">

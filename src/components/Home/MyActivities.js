@@ -1,7 +1,7 @@
 import React from "react";
-import { Row, Col, Container } from "react-bootstrap";
+import { Row, Container } from "react-bootstrap";
 import StatItem from "./StatItem";
-import Title from "./Title";
+import Title from "../common/Title";
 export default function MyActivities() {
   return (
     <>

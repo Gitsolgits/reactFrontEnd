@@ -1,0 +1,23 @@
+.title {
+  font-weight: 800;
+  font-family: sans-serif;
+  color: #183b5f;
+}
+
+.action-button {
+  border: 1.5px solid #183b5f;
+  width: 100px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 160px;
+}
+
+.action-button-fill {
+  border: 1.5px solid #183b5f;
+  background-color: #183b5f;
+  color: #ffffff;
+  width: 100px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 160px;
+}
